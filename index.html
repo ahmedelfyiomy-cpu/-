@@ -6,43 +6,59 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>NOOR | عبايات وإسدالات</title>
+<title>بداية | عبايات وإسدالات</title>
+
+<meta name="description" content="بداية - متجر إلكتروني متخصص في العبايات والإسدالات بخامات فاخرة وتصميمات عصرية.">
+
+<meta name="keywords" content="عبايات, إسدالات, بداية, ملابس محجبات, عبايات حريمي">
+
+<meta name="theme-color" content="#F6F1EB">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 
 <body>
 
+<!-- Loader -->
+
 <div class="loader">
+
 <div class="spinner"></div>
+
 </div>
+
+<!-- Header -->
 
 <header>
 
-<div class="logo">
+<div class="container">
 
-NOOR
+<a href="index.html" class="logo">
 
-</div>
+بداية
+
+</a>
 
 <nav>
 
 <ul>
 
-<li><a href="#">الرئيسية</a></li>
+<li><a href="index.html">الرئيسية</a></li>
 
 <li><a href="#abayas">عبايات</a></li>
 
 <li><a href="#isdalat">إسدالات</a></li>
+
+<li><a href="#offers">العروض</a></li>
 
 <li><a href="cart.html">
 
@@ -56,23 +72,35 @@ NOOR
 
 </nav>
 
+</div>
+
 </header>
+
+<!-- Hero -->
 
 <section class="hero">
 
-<div class="overlay">
+<div class="hero-content">
+
+<span>
+
+✨ مجموعة صيف 2026
+
+</span>
 
 <h1>
 
-أناقة تليق بحشمتك
+الأناقة تبدأ من بداية
 
 </h1>
 
 <p>
 
-تشكيلة فاخرة من العبايات والإسدالات بخامات عالية وتصميمات عصرية.
+تشكيلة مختارة من العبايات والإسدالات بخامات فاخرة، تصميمات عصرية، وجودة تناسب كل يوم.
 
 </p>
+
+<div class="hero-buttons">
 
 <a href="#products" class="btn">
 
@@ -80,27 +108,45 @@ NOOR
 
 </a>
 
+<a href="#categories" class="btn-outline">
+
+اكتشف المجموعات
+
+</a>
+
+</div>
+
 </div>
 
 </section>
 
-<section class="categories">
+<!-- Categories -->
 
-<div class="title">
+<section class="categories" id="categories">
+
+<div class="section-title">
 
 <h2>
 
-الأقسام
+تسوق حسب القسم
 
 </h2>
 
+<p>
+
+اختاري القسم المناسب ليكي
+
+</p>
+
 </div>
 
-<div class="category-container">
+<div class="categories-grid">
 
-<div class="category-card">
+<div class="category-card" id="abayas">
 
-<img src="assets/images/abaya.jpg">
+<img src="assets/images/abaya.jpg" alt="عبايات">
+
+<div class="category-info">
 
 <h3>
 
@@ -110,21 +156,25 @@ NOOR
 
 <p>
 
-موديلات عصرية تناسب جميع الأذواق.
+تصميمات كلاسيك وعصرية تناسب جميع المناسبات.
 
 </p>
 
-<a href="collection.html">
+<a href="collection.html?cat=abayas">
 
-تصفح
+عرض المجموعة
 
 </a>
 
 </div>
 
-<div class="category-card">
+</div>
 
-<img src="assets/images/esdal.jpg">
+<div class="category-card" id="isdalat">
+
+<img src="assets/images/esdal.jpg" alt="إسدالات">
+
+<div class="category-info">
 
 <h3>
 
@@ -134,13 +184,13 @@ NOOR
 
 <p>
 
-راحة وأناقة في كل وقت.
+راحة وأناقة بخامات عالية الجودة.
 
 </p>
 
-<a href="collection.html">
+<a href="collection.html?cat=isdalat">
 
-تصفح
+عرض المجموعة
 
 </a>
 
@@ -148,11 +198,15 @@ NOOR
 
 </div>
 
+</div>
+
 </section>
+
+<!-- Products -->
 
 <section class="products" id="products">
 
-<div class="title">
+<div class="section-title">
 
 <h2>
 
@@ -160,188 +214,80 @@ NOOR
 
 </h2>
 
-</div>
+<p>
 
-<div class="products-grid"><div class="product-card">
+أفضل المنتجات لهذا الشهر
 
-<img src="assets/images/product1.jpg" alt="عباية كلاسيك">
-
-<div class="product-info">
-
-<span class="badge">جديد</span>
-
-<h3>عباية كلاسيك</h3>
-
-<p class="price">850 جنيه</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
+</p>
 
 </div>
 
+<div class="products-grid"><!-- المنتج 1 -->
+<div class="product-card">
+
+    <span class="badge">جديد</span>
+
+    <button class="wishlist">
+        <i class="fa-regular fa-heart"></i>
+    </button>
+
+    <img src="assets/images/products/abaya-1.jpg" alt="عباية كلاسيك">
+
+    <div class="product-info">
+
+        <h3>عباية كلاسيك</h3>
+
+        <p class="desc">
+            عباية بخامة كريب ثقيل ناعمة ومريحة.
+        </p>
+
+        <div class="price">
+
+            <span class="new-price">
+                899 جنيه
+            </span>
+
+        </div>
+
+        <div class="buttons">
+
+            <a href="product.html?id=1" class="details">
+                عرض المنتج
+            </a>
+
+            <button class="add-cart">
+                <i class="fa-solid fa-cart-plus"></i>
+            </button>
+
+        </div>
+
+    </div>
+
 </div>
+
+<!-- المنتج 2 -->
 
 <div class="product-card">
 
-<img src="assets/images/product2.jpg" alt="عباية">
+<span<!-- عروض -->
 
-<div class="product-info">
+<section class="offers" id="offers">
 
-<span class="badge sale">خصم</span>
+<div class="offer-box">
 
-<h3>عباية موكا</h3>
+<div class="offer-text">
 
-<p class="price">
-<span class="old-price">980</span>
-790 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product3.jpg">
-
-<div class="product-info">
-
-<h3>إسدال كريب</h3>
-
-<p class="price">
-650 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product4.jpg">
-
-<div class="product-info">
-
-<h3>إسدال سعودي</h3>
-
-<p class="price">
-720 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product5.jpg">
-
-<div class="product-info">
-
-<h3>عباية لينن</h3>
-
-<p class="price">
-930 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product6.jpg">
-
-<div class="product-info">
-
-<h3>إسدال قطني</h3>
-
-<p class="price">
-610 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product7.jpg">
-
-<div class="product-info">
-
-<h3>عباية سوداء</h3>
-
-<p class="price">
-890 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-<div class="product-card">
-
-<img src="assets/images/product8.jpg">
-
-<div class="product-info">
-
-<h3>عباية بيج</h3>
-
-<p class="price">
-940 جنيه
-</p>
-
-<a href="product.html" class="view-btn">
-عرض المنتج
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="offer">
-
-<div class="offer-content">
+<span>عرض خاص</span>
 
 <h2>
 
-خصومات تصل إلى 30%
+خصم حتى 30%
 
 </h2>
 
 <p>
 
-استمتعي بأفضل العروض لفترة محدودة.
+على مجموعة مختارة من العبايات والإسدالات لفترة محدودة.
 
 </p>
 
@@ -353,7 +299,17 @@ NOOR
 
 </div>
 
+<div class="offer-image">
+
+<img src="assets/images/banner-offer.jpg" alt="عرض">
+
+</div>
+
+</div>
+
 </section>
+
+<!-- مميزات المتجر -->
 
 <section class="features">
 
@@ -369,7 +325,7 @@ NOOR
 
 <p>
 
-لكل محافظات مصر
+توصيل لجميع المحافظات.
 
 </p>
 
@@ -377,17 +333,17 @@ NOOR
 
 <div class="feature">
 
-<i class="fa-solid fa-shield-heart"></i>
+<i class="fa-solid fa-box-open"></i>
 
 <h3>
 
-جودة مضمونة
+استبدال واسترجاع
 
 </h3>
 
 <p>
 
-أفضل الخامات
+خلال 14 يوم.
 
 </p>
 
@@ -405,15 +361,35 @@ NOOR
 
 <p>
 
-راحة وأمان
+بدون دفع إلكتروني.
 
 </p>
 
 </div>
 
-</section><!-- العملاء -->
+<div class="feature">
 
-<section class="testimonials">
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+
+دعم العملاء
+
+</h3>
+
+<p>
+
+متاح طوال الأسبوع.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- آراء العملاء -->
+
+<section class="reviews">
 
 <div class="section-title">
 
@@ -423,57 +399,17 @@ NOOR
 
 </h2>
 
-<p>
-
-ثقة عملائنا هي سر نجاحنا
-
-</p>
-
 </div>
 
-<div class="testimonial-container">
+<div class="reviews-grid">
 
-<div class="testimonial-card">
+<div class="review">
 
-<div class="stars">
-
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-
-</div>
+★★★★★
 
 <p>
 
-الخامة ممتازة جداً والعباية طلعت أحسن من الصور.
-
-</p>
-
-<h4>
-
-أسماء محمد
-
-</h4>
-
-</div>
-
-<div class="testimonial-card">
-
-<div class="stars">
-
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-
-</div>
-
-<p>
-
-التوصيل كان سريع والتعامل محترم جداً.
+الخامة ممتازة جدًا والمقاس مظبوط.
 
 </p>
 
@@ -485,21 +421,31 @@ NOOR
 
 </div>
 
-<div class="testimonial-card">
+<div class="review">
 
-<div class="stars">
-
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star"></i>
-<i class="fa-solid fa-star-half-stroke"></i>
-
-</div>
+★★★★★
 
 <p>
 
-الخامة ناعمة والمقاس مظبوط.
+التوصيل سريع والتعامل محترم.
+
+</p>
+
+<h4>
+
+أسماء محمد
+
+</h4>
+
+</div>
+
+<div class="review">
+
+★★★★★
+
+<p>
+
+أكيد هطلب مرة تانية.
 
 </p>
 
@@ -527,13 +473,15 @@ NOOR
 
 <p>
 
-احصلي على أحدث العروض والكوليكشن الجديدة.
+اعملي اشتراك في القائمة البريدية علشان توصلك أحدث المنتجات والعروض.
 
 </p>
 
 <form>
 
-<input type="email" placeholder="البريد الإلكتروني">
+<input
+type="email"
+placeholder="البريد الإلكتروني">
 
 <button>
 
@@ -553,15 +501,15 @@ NOOR
 
 <div>
 
-<h3>
+<h2>
 
-NOOR
+بداية
 
-</h3>
+</h2>
 
 <p>
 
-براند متخصص في العبايات والإسدالات بأفضل الخامات وأحدث التصميمات.
+متجر متخصص في العبايات والإسدالات بخامات عالية وجودة مميزة.
 
 </p>
 
@@ -571,19 +519,19 @@ NOOR
 
 <h3>
 
-روابط سريعة
+الأقسام
 
 </h3>
 
 <ul>
 
-<li><a href="#">الرئيسية</a></li>
-
 <li><a href="#">عبايات</a></li>
 
 <li><a href="#">إسدالات</a></li>
 
-<li><a href="#">اتصل بنا</a></li>
+<li><a href="#">العروض</a></li>
+
+<li><a href="#">تواصل معنا</a></li>
 
 </ul>
 
@@ -593,19 +541,21 @@ NOOR
 
 <h3>
 
-خدمة العملاء
+تواصل معنا
 
 </h3>
 
-<ul>
+<p>
 
-<li>الدفع عند الاستلام</li>
+📞 01000000000
 
-<li>استبدال واسترجاع</li>
+</p>
 
-<li>الشحن لجميع المحافظات</li>
+<p>
 
-</ul>
+📧 info@bedaya.com
+
+</p>
 
 </div>
 
@@ -635,10 +585,30 @@ NOOR
 
 <div class="copyright">
 
-© 2026 NOOR جميع الحقوق محفوظة
+© 2026 بداية | جميع الحقوق محفوظة
 
 </div>
 
 </footer>
 
-<a href="#" class="top
+<!-- زر واتساب -->
+
+<a href="https://wa.me/201000000000" class="whatsapp">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- زر أعلى الصفحة -->
+
+<a href="#" class="scroll-top">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</a>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
